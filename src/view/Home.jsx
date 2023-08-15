@@ -1,9 +1,10 @@
 import React from 'react';
+import '../css/Home.css'
 
 const Home = () => {
   return (
-    <div>Home
-        {/* <button>me</button> */}
+    <div className='home'>Home
+            
     </div>
   );
 }

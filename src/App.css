@@ -19,9 +19,14 @@
 
 .container{
   max-width: 1660px;
+  margin: auto;
 }
 button, input{
   outline: 0;
+}
+.listing{
+  text-decoration: none;
+  color: unset;
 }
 
 .section{
@@ -33,4 +38,7 @@ button, input{
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 1rem;
+}
+li{
+  list-style: none;
 }

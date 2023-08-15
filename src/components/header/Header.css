@@ -1,0 +1,215 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: relative;
+    width: 100%;
+    background-color: #0f0f0f;
+    top: 0;
+    left: 0;
+    position: fixed;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+
+    /* color: black; */
+}
+.header__content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 0 2rem;
+}
+
+.header_list{
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+}
+.header_list > * ~ * {
+    margin-left: 1.3rem;
+}
+
+.header_list li{
+    padding: 5px 0;
+    font-weight: 100;
+    position: relative;
+    font-size: .8rem;
+   transition: font-size .5s ease;
+}
+.header_list li:hover{
+    /* color: rgb(170, 255, 0); */
+   /* font-size: 1.8rem; */ 
+   
+}
+.header_list li::after{
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width: 0;
+    
+    transition: width .3s ease,color .3s ease;
+    height: 3px;
+    background-color: yellowgreen;
+}
+.header_list li:hover::after{
+    width: 100%;
+
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__logo h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    /* color: rgb(77, 77, 255); */
+
+}
+.header__logo h1 .B-color{
+    color: yellowgreen;
+}
+.header__logo h1 .tech{
+    text-transform: capitalize;
+    font-weight: 100;
+
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.nav-item .foward-icon{
+    padding-top: 1rem;
+    transform: rotate(90deg);
+    height: 15px;
+    transition: transform .3s ease;
+}
+.header_list li:hover .foward-icon{
+    transform: rotate(-90deg);
+    color: rgb(170, 255, 0);
+}
+.header_list li img{
+    filter: brightness(0) invert(1) grayscale(1) brightness(1) saturate(0);
+    width: 25px;
+    transition: filter .3s ease;
+}
+.header_list li:hover img{
+    filter: brightness(0) invert(1) grayscale(1) brightness(1) saturate(0) sepia(1) hue-rotate(80deg);
+}
+
+.header-lower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header-lower-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    /* margin-top: 1rem; */
+    /* padding:  1rem 0; */
+}
+.header-lower-content .nav-item{
+    font-size: .8rem;
+    position: relative;
+    margin: 0 .5rem;
+    
+}
+.header-lower-content .nav-item .foward-icon{
+    width: 30px;
+    transform: rotate(90deg)  ;
+}
+.header-lower-content .nav-item:hover .foward-icon{
+    transform: rotate(-90deg);
+}
+.header-lower-content .nav-item::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+   
+    transition: width .3s ease;
+    background-color: yellowgreen;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    z-index: 2;
+}
+.header-lower-content .nav-item::before{
+    content: "";
+    
+    position: absolute;
+    height: 100%;
+    transition: width .3s ease;
+    background-color: rgba(255, 255, 255, 0.048);
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+    width: 0;
+}
+.header-lower-content .nav-item:hover::after{
+    width: 100%;
+}
+.header-lower-content .nav-item:hover::before{
+    width: 100%;
+    padding: 4px;
+}
+.nav-item-list{
+    display: none;
+    transition: display .3s ease;
+}
+.header-lower-content:hover .nav-item-list{
+    display: flex;
+    /* background-color: black; */
+}
+.remove{
+    position: absolute;
+    width: 15rem;padding: 1rem .5rem;
+    padding:.5rem  1rem ;
+    background-color: rgb(105, 101, 101);
+    top: 2.1rem;
+    border-radius: 3px;
+    left: 0;
+}
+.remove .nav-item-list{
+    margin: .4rem 0;
+    position: relative;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.remove .nav-item-list .foward-ico{
+    width: 15px;
+}
+.remove .nav-item-list .list-items{
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    /* background-color: aqua; */
+}
+.remove .nav-item-list .list-items::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    
+}
+.remove .nav-item-list:hover .list-items{
+    color: rgb(24, 24, 24);
+}
+
