@@ -172,6 +172,7 @@
 }
 .header-lower-content:hover .nav-item-list{
     display: flex;
+    height: 2rem;
     /* background-color: black; */
 }
 .remove{
@@ -197,7 +198,7 @@
 .remove .nav-item-list .list-items{
     position: relative;
     width: 100%;
-    height: 2rem;
+    
     /* background-color: aqua; */
 }
 .remove .nav-item-list .list-items::after{
