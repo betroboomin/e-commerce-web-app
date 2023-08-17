@@ -13,7 +13,13 @@ import Workstation from '../../assets/workstation.png'
 import monitor from '../../assets/monitor.png'
 import accessories from '../../assets/accessories.png'
 
+//icons for home section
 
+import home from '../../assets/dellhomeicon.svg';
+import compatible from '../../assets/dellprocessoricon.png';
+import order from '../../assets/dellheadphoneicon.png';
+import warrenty from '../../assets/dellverifiedicon.svg';
+import driver from '../../assets/dellsettingicon.svg'
 
 export const HeaderList = [
         
@@ -117,15 +123,38 @@ export const headerlistLow = [
     list: [
         {
           name: 'support home',
-         link: '/supporthome'
+         link: '/supporthome',
+         desc: 'browse all support related information',
+         image: home
         },
         {
-          name: 'support Library',
-         link: '/support-library'
+          name: 'Orders Support',
+         link: '/orders-status',
+         desc: 'Check the status of orders',
+         image: order
         },
         {
           name: 'Drivers & Downloads',
-         link: '/drivers'
+         link: '/drivers',
+         desc: 'get the latest drivers and softwares',
+         image: driver
+
+         
+        },
+        {
+          name: 'Support services & warrenty',
+         link: '/warranty',
+         desc: 'Check warrenty of products',
+         image: warrenty
+
+        },
+       
+        {
+          name: 'compatible parts',
+         link: '/documentation',
+         desc: 'find 100% parts and upgrades for your products',
+         image: compatible
+
         },
     ],
     link: '/Support'

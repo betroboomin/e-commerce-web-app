@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomeView.css'
-import bg from '../../assets/ecom-bg.avif'
+import bg from '../../assets/dellbg.avif'
 import NavButton from '../buttons/nav-button/NavButton'
 
 const HomeView = () => {
@@ -9,9 +9,13 @@ const HomeView = () => {
         
         <div className="homeview__content container">
             
-            <h3>Bring AI to Your Data</h3>
-            <h1>Dell generative Ai solutions</h1>
+            <h3>AlienWare Aurora R16</h3>
+            <h1>Optimised for gamers</h1>
+            <div className="btn-sec">
             <NavButton> learn more</NavButton>
+            <NavButton className="second-btn"> Shop now</NavButton>
+            </div>
+           
         </div>
     </div>
   )
