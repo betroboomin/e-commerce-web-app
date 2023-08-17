@@ -1,30 +1,29 @@
 import React from 'react';
 import'./HomeViewSection.css';
 import { Link } from 'react-router-dom';
-import backtoschool from '../../assets/dellimagebacktoschool.avif'
 
-const HomeViewSection = (props) => {
+const HomeViewSectionSmall = (props) => {
   return (
-    <div className='homeviewsection'>
-        <div className="home-view-section container">
-            <img src={props.src} alt='' />
-            <div className="home-view-section-text">
-                <h3 className='mb-2'>{props.h3}</h3>
-                <h1 className='mb-2'>{props.h1}</h1>
-                <p className='mb-2'>{props.p}</p>
+    <div className=''>
+        <div className="home-view-section-small ">
+            
+            <div className="home-view-section-text-small">
+                <h3 className='mb-1'>{props.h3}</h3>
+                <h1 className='mb-1'>{props.h1}</h1>
+                <p className='mb-1'>{props.p}</p>
                 <div className='link-section'>
                    <Link className='listing text-color' to=''>{props.link1}</Link> 
-                   <div className='line'></div>
-                   <Link className='listing text-color'>{props.link2}</Link>
+                   
                 </div>
                 
             </div>
+            <img src={props.src} alt='' />
         </div>
     </div>
   );
 }
 
-export default HomeViewSection;
+export default HomeViewSectionSmall;
 // import React from 'react';
 // import'./HomeViewSection.css';
 // import { Link } from 'react-router-dom';
