@@ -92,6 +92,24 @@ const Header = () => {
   );
 };
 
+// useEffect(() => {
+//   const shrinkHeader = () => {
+//     if (
+//       document.body.scrollTop > 100 ||
+//       document.documentElement.scrollTop > 100
+//     ) {
+//       headerRef.current.classList.add('shrink');
+//     } else {
+//       headerRef.current.classList.remove('shrink');
+//     }
+//   };
+//   window.addEventListener('scroll', shrinkHeader);
+//   return () => {
+//     window.removeEventListener('scroll', shrinkHeader);
+//   };
+// }, []);
+
+
 const Search = (props) => {
   const navigate = useNavigate();
   const [keyword, setKeyword] = useState(props.keyword ? props.keyword : null);
