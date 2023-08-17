@@ -1,0 +1,41 @@
+.technologies{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.tech-items{
+ width: 420px;
+ background-color: red;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ flex-direction: column;
+}
+.tech-items img{
+    width: 100%;
+    height: auto;
+}
+.tech-items-below{
+    height: 2rem;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.tech-items-b{
+    height: 100%;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+.tech-items-b p{
+    font-size: 1rem;
+    font-weight: 500;
+}

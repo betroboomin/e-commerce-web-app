@@ -1,0 +1,11 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading{
+    padding: 2rem 0;
+    text-transform: capitalize;
+    font-weight: 500;
+}

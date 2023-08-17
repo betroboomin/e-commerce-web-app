@@ -1,0 +1,31 @@
+.headerl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 150px;
+    color: white;
+}
+.headerl__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
+}
+
+.logo-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 5rem;
+    width: 12rem;
+}
+.logo-sec img{
+    filter: brightness(0) invert(1) grayscale(1) brightness(1) saturate(0);
+   width: 3rem;
+}
+.logo-sec h3{
+    font-size: .8rem;
+    font-weight: 100;
+}
