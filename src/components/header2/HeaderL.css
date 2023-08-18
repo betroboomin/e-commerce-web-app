@@ -13,6 +13,7 @@
     width: 100%;
     height: 100px;
     background-color: rgb(26, 34, 28) ;
+    box-shadow: 1px 1px 20px  black;
     /* opacity: .7; */
     z-index: 99;
 }

@@ -170,32 +170,39 @@ export const headerlistLow = [
 export const headerl = [ 
   {
     name: 'Laptop',
-    image: laptop
+    image: laptop,
+    link:'/laptop'
 
   },
   {
     name: 'desktop',
-    image: desktop
+    image: desktop,
+    link:'/desktop'
 
   },
   {
     name: 'monitor',
-    image: monitor
+    image: monitor,
+    link:'/monitor'
 
   },
   {
     name: 'accessories',
-    image: accessories
+    image: accessories,
+    link:'/accessories'
 
   },
   {
     name: 'server & storage',
-    image: server
+    image: server,
+    link:'/server'
+
 
   },
   {
     name: 'monitor',
-    image: monitor
+    image: monitor,
+    link:'/monitor'
 
   },
 ]

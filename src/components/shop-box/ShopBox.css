@@ -1,0 +1,84 @@
+.shopbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 10px 10px;
+    color: rgb(230, 230, 230);
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.897);
+    
+
+}
+.shopboxhead{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.shopboxhead .foward-icon{
+    width: 15px;
+}
+.shopbox ul{
+    width: 100%;
+}
+.shopbox ul li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+.checkmark {
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-color: white;
+  }
+.shopbox ul li input[type="checkbox"] {
+    /* display: none; */
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+  }
+  .shopbox ul li input[type="checkbox"]:checked + .checkmark {
+    background-color: #2196f3;
+  }
+
+  .shopbox ul li input[type="checkbox"]:checked + .checkmark:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-left: 4px;
+  }
+.listtext{
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+/* .checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-color: white;
+  } */
+  

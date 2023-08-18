@@ -1,0 +1,27 @@
+.shop{
+    width: 100%;
+    
+}
+
+
+.shop-items{
+    display: grid;
+    grid-template-columns: 1.2fr 3fr;
+    /* height: 100px; */
+}
+.right-grid{
+    width: 100%;
+    /* background-color: white; */
+    box-shadow: 1px 1px 10px black;
+    
+}
+.left-grid{
+    /* background-color: red; */
+    max-width: 400px;
+    padding: 0 15px;
+    overflow-y: scroll;
+}
+.box{
+    width: 100%;
+    min-height: 50px;
+}
