@@ -2,7 +2,14 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div style={{ 
+      height: '300px'
+     }}>
+      
+      Footer
+      
+      
+      </div>
   );
 }
 

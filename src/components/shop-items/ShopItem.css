@@ -1,0 +1,136 @@
+.shopitem{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    height: auto;
+    height: 300px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 1px 1px 10px black;
+    
+}
+.imagesection{
+    font-size: .9rem;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 1s ease;
+}
+.imagesection img{
+   cursor: pointer;
+}
+.imagesection .image1{
+    height: 210px;
+    transition: height .2s ease;
+}
+.imagesection:hover .image1{
+    /* display: none; */
+    height: 0px;
+    transition: height .2s ease;
+}
+.imagesection:hover .image2{
+    height: 210px;
+    display: flex;
+    opacity: 1;
+    transition: display .5s ease,opacity 1s ease;
+}
+.imagesection .image2{
+    opacity: 0;
+    height: 0px;
+    transition: display .5s ease,opacity 1s ease;
+}
+.imagesection .color-circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    position:absolute;
+    bottom: 0;
+}
+.imagesection .top-save{
+    display: flex;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.imagesection .top-save .compare-sec{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.specs-section{
+   font-size: .8rem;
+   padding:0 1rem;
+}
+
+.specs-section .listing label{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: yellowgreen;
+}
+.below-name {
+    color: rgb(207, 207, 207);
+}
+
+.specs-section .specs{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.specs-section .horizontal-line{
+    margin-top: .5rem;
+    background-color: rgb(207, 207, 207);
+    height: 1px;
+    width: 100%;
+}
+.specs-section .spec-section{
+    margin-top: .5rem;
+}
+.specs-section .spec-section .spec-box{
+    display: flex;
+    padding: .5rem 0;
+    
+}
+.specs-section .spec-section .spec-box label{
+    
+    width: 5rem;
+    text-transform: capitalize;
+    font-size: .7rem;
+    /* color: rgb(190, 190, 190); */
+}
+.price-section{
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+.price-section .estimated{
+    font-size: .8rem;
+    height: 1.7rem;
+    position: relative;
+}
+.price-section .estimated::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    margin-top: 10rem;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: yellowgreen;
+
+}
+ .price-section-box{
+    display: flex;
+    margin-bottom: .5rem;
+    gap: .3rem;
+    /* color: rgb(185, 185, 185); */
+    
+}
+.estValue{
+    text-decoration: line-through;
+}
+.price{
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}

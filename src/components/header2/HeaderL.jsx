@@ -24,7 +24,7 @@ const HeaderL = () => {
 
   return (
     <div ref={headerRef} className="headerl">
-      <div className="headerl__content container">
+      <div className="headerl__content ">
         {headerl.map((item, i) => (
           <Link key={i} to={item.link} className="listing">
           <div className="logo-sec" key={i}>
