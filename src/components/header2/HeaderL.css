@@ -46,7 +46,7 @@
     cursor: pointer;
     transition: background-color .5s ease ;
 }
-.logo-sec:hover{
+ .logo-sec:hover {
     background-color: rgb(46, 46, 46);
     
 }
@@ -57,4 +57,7 @@
 .logo-sec h3{
     font-size: .8rem;
     font-weight: 100;
+}
+.heighticon{
+    height: 100%;
 }

@@ -26,7 +26,7 @@ const ShopItem = ({image,image2,color,name,specs,estValue,price}) => {
                 </div>
             </div>
         </div>
-        <div className="specs-section">
+        <div className="specs-section" >
             <Link className="listing">
                 <label>{name}</label>
             </Link>
