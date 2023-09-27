@@ -11,6 +11,7 @@ import { Monitor } from "../view/shop/Monitor";
 const Routing = () => {
   return (
     <Routes>
+      
       {/* <Route path='/:category/search/:keyword' element={<Catalog />} />
       <Route path='/:category/:id' element={<Detail />} />
   <Route path='/:category' element={<Catalog />} />*/}
