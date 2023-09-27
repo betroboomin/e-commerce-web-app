@@ -10,33 +10,41 @@ import { useNavigate } from "react-router-dom";
 import Home from "./Home";
 
 const Shop = (props) => {
+  const [isClicked, setisClicked] = useState(false);
+  const navigate = useNavigate();
+  const handlebtnclick =()=>{
+setisClicked(!isClicked);
+// navigate(<Home />)
+  }
   const { rightsection, category,
     //  items 
     } = props;
 
   const renderItems = (items) => {
-    return items.map((item, i) => (
-      <ShopItem
-        key={i}
-        image={item.image}
-        image2={item.image2}
-        color={item.color}
-        specs={item.specs}
-        name={item.name}
-        memory={item.memory}
-        estValue={item.estValue}
-        price={item.price}
-      />
-    ));
+    return (
+      <>
+      { !isClicked && <ShopHome click={handlebtnclick} />}
+        {isClicked && items.map((item, i) => (
+          <>
+            <ShopItem
+              key={i}
+              image={item.image}
+              image2={item.image2}
+              color={item.color}
+              specs={item.specs}
+              name={item.name}
+              memory={item.memory}
+              estValue={item.estValue}
+              price={item.price}
+            />
+          </>
+        ))}
+      </>
+    );
   };
 
 
-  const [isClicked, setisClicked] = useState(false);
-  const navigate = new useNavigate();
-  const handlebtnclick =()=>{
-setisClicked(!isClicked);
-// navigate(<Home />)
-  }
+ 
 
 
   return (
@@ -51,9 +59,9 @@ setisClicked(!isClicked);
           </div>
         </div>
         <div className="right-grid">
-          {!isClicked && (<ShopHome click={handlebtnclick} />)}
           
-          { isClicked && rightsection.map((item, i) => (
+          
+          {rightsection.map((item, i) => (
               <div key={i}>
                 {category === "machines" && renderItems(item.machines)}
                 {category === "desktops" && renderItems(item.desktops)}

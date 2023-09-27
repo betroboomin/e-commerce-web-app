@@ -7,9 +7,9 @@ const HeaderL = () => {
   const headerRef = useRef();
   const [isActive, setIsActive] = useState(false);
 
-  const handleOnClick = () => {
-    setIsActive(!isActive);
-  }
+  const handleOnClick = (index) => () => {
+    setIsActive(index);
+  };
   useEffect(() => {
     const shrinkHeader = () => {
       if (
@@ -33,7 +33,7 @@ const HeaderL = () => {
       <div className="headerl__content ">
         {headerl.map((item, i) => (
           <Link key={i} to={item.link} className="listing heighticon">
-          <div onClick={handleOnClick} className={isActive ? `logo-sec ${'actively'}` : 'logo-sec'} key={i}>
+          <div onClick={handleOnClick(i)} className={`logo-sec ${isActive === i ? 'actively' : ''}`} key={i}>
             <img src={item.image} alt="" />
             <h3>{item.name}</h3>
           </div>
