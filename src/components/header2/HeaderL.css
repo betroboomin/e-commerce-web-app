@@ -50,6 +50,10 @@
     background-color: rgb(46, 46, 46);
     
 }
+.logo-sec.actively{
+    background-color: rgb(46, 46, 46);
+    
+}
 .logo-sec img{
     filter: brightness(0) invert(1) grayscale(1) brightness(1) saturate(0);
    width: 3rem;

@@ -171,38 +171,38 @@ export const headerl = [
   {
     name: 'Laptop',
     image: laptop,
-    link:'/laptop'
+    link:'shop/laptop'
 
   },
   {
     name: 'desktop',
     image: desktop,
-    link:'/desktop'
+    link:'shop/desktop'
 
   },
   {
     name: 'monitor',
     image: monitor,
-    link:'/monitor'
+    link:'shop/monitor'
 
   },
   {
     name: 'accessories',
     image: accessories,
-    link:'/accessories'
+    link:'shop/accessories'
 
   },
   {
     name: 'server & storage',
     image: server,
-    link:'/server'
+    link:'shop/server'
 
 
   },
   {
     name: 'monitor',
     image: monitor,
-    link:'/monitor'
+    link:'shop/monitor'
 
   },
 ]

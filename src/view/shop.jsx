@@ -1,9 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 // import HomeViewSection from "../components/home-view-section/HomeViewSection";
 import "../css/Shop.css";
 import ShopBox from "../components/shop-box/ShopBox";
 
 import ShopItem from "../components/shop-items/ShopItem";
+import ShopHome from "../components/RenderShopHome/ShopHome";
+import Routing from "../config/routes";
+import { useNavigate } from "react-router-dom";
+import Home from "./Home";
 
 const Shop = (props) => {
   const { rightsection, category,
@@ -26,6 +30,15 @@ const Shop = (props) => {
     ));
   };
 
+
+  const [isClicked, setisClicked] = useState(false);
+  const navigate = new useNavigate();
+  const handlebtnclick =()=>{
+setisClicked(!isClicked);
+// navigate(<Home />)
+  }
+
+
   return (
     <div className="shop">
       <div className="shop-items container">
@@ -38,8 +51,9 @@ const Shop = (props) => {
           </div>
         </div>
         <div className="right-grid">
-          {
-            rightsection.map((item, i) => (
+          {!isClicked && (<ShopHome click={handlebtnclick} />)}
+          
+          { isClicked && rightsection.map((item, i) => (
               <div key={i}>
                 {category === "machines" && renderItems(item.machines)}
                 {category === "desktops" && renderItems(item.desktops)}
