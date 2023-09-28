@@ -5,6 +5,7 @@ import Home from "../view/Home";
 import { Laptop } from "../view/shop/laptop";
 import { Desktop } from "../view/shop/Desktop";
 import { Monitor } from "../view/shop/Monitor";
+import LaptopHome from "../view/LaptopHome";
 // import Catalog from "../view/Catalog";
 // import Detail from "../view/Detail";
 
@@ -17,6 +18,7 @@ const Routing = () => {
   <Route path='/:category' element={<Catalog />} />*/}
       <Route path='/' element={<Home />} /> 
       <Route path='/shop/laptop' element={<Laptop />} /> 
+      <Route path='/shop/laptops' element={<LaptopHome />} /> 
       <Route path='/shop' element={<Laptop />} /> 
       <Route path='/shop/desktop' element={<Desktop />} /> 
       <Route path='/shop/monitor' element={<Monitor />} /> 

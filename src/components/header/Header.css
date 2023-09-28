@@ -126,6 +126,9 @@
     font-size: .8rem;
     position: relative;
     margin: 0 .5rem;
+    /* background-color: green; */
+    box-sizing: border-box;
+    padding: 0 .5rem;
     
 }
 .header-lower-content .nav-item .foward-icon{
@@ -144,6 +147,7 @@
     background-color: yellowgreen;
     bottom: 0;
     left: 50%;
+    box-sizing: border-box;
     transform: translateX(-50%);
     width: 0;
     z-index: 2;
