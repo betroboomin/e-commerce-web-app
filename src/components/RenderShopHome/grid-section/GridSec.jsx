@@ -5,6 +5,7 @@ import image2 from "../../../assets/laptops/laptopwithflower.avif";
 
 const comboData = [
   {
+    id: 1,
     name: "XPS",
     description: {
       heading: "Creators and Creativity",
@@ -18,6 +19,7 @@ const comboData = [
     },
   },
   {
+    id:2,
     name: "XPS",
     description: {
       heading: "Creators and Creativity",
@@ -31,6 +33,7 @@ const comboData = [
     },
   },
   {
+    id:3,
     name: "Vostro",
     description: {
       heading: "Small Business Productivity",
