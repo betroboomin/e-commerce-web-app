@@ -145,9 +145,9 @@ flex: 1;
     opacity: 0;
     width: 100%;
     box-sizing: border-box;
-    transition: opacity .8s ease, top .8s ease;
+    transition: all .3s ease;
 }
-.combolist.combolist-active{
+.combolist-active{
 opacity: 1;
 top: 3rem;
 }
@@ -155,9 +155,30 @@ top: 3rem;
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
+    transition: font-size .2s ease;
+    position: relative;
+}
+.combolist span::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    transform: translateX(50%);
+    background-color: red;
+    transition: all .5s ease;
+}
+.combolist span:hover::after{
+width: 100%;
+opacity: 1;
+/* transform: translateX(50%); */
 }
 .combolist span:hover{
     background-color: green;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 .column-image-shop{
     width: 100%;

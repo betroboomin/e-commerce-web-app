@@ -48,32 +48,25 @@ const comboData = [
 ];
 
 const GridSec = () => {
-  const [isClicked, setIsClicked] = useState(null);
-  const [name, setName] = useState(null);
-  const [nameExist, setNameExist] = useState(null);
+  // const [isClicked, setIsClicked] = useState(null);
+  const [comboStates, setComboStates] = useState(comboData.map(() => ({ isClicked: false, name: null })));
 
   const handleComboClick = (i) => {
-    if (isClicked === i) {
-      setIsClicked(null);
-    } else {
-      setIsClicked(i);
-    }
+    setComboStates((prevStates) =>
+      prevStates.map((state, index) => ({
+        isClicked: index === i ? !state.isClicked : false,
+        name: index === i ? state.name : state.name,
+      }))
+    );
   };
 
-  useEffect(() => {
-    handleComboNameInitial();
-  }, []);
-
-  const handleComboNameChange = (data) => {
-    setName(data);
-  };
-
-  const handleComboNameInitial = () => {
-    if (nameExist !== null && comboData[nameExist] && comboData[nameExist].name) {
-      setName(comboData[nameExist].name);
-      return comboData[nameExist].name;
-    }
-    return null;
+  const handleComboNameChange = (i, data) => {
+    setComboStates((prevStates) =>
+      prevStates.map((state, index) => ({
+        isClicked: index === i ? state.isClicked : false,
+        name: index === i ? data : state.name,
+      }))
+    );
   };
 
   return (
@@ -83,27 +76,25 @@ const GridSec = () => {
         {comboData.slice(0, 3).map((comboitem, i) => (
           <div key={i} className="home-shop-container-column">
             <div className="column-combobox" onClick={() => handleComboClick(i)}>
-              {handleComboNameInitial()}
+              {/* {comboStates[i].name || comboitem.name} */}
 
               <span>
-                {isClicked === i && name ? name : comboitem.name}
+              {comboStates[i].name || comboitem.name}
+                {/* {comboStates[i].isClicked && comboStates[i].name ? comboStates[i].name : comboitem.name} */}
               </span>
-
-              {isClicked === i && (
-                <div
-                  className={`combolist combolist-active`}
-                >
-                  {comboData.map((item, j) => (
-                    <span key={j} onClick={() => handleComboNameChange(item.name)}>
-                      {item.name}
-                    </span>
-                  ))}
-                </div>
-              )}
-
               <ArrowForwardIosIcon
-                className={`arrow ${isClicked === i ? "active" : ""}`}
+                className={`arrow ${comboStates[i].isClicked ? "active" : ""}`}
               />
+
+              <div
+                className={`combolist ${comboStates[i].isClicked ? 'combolist-active': ''}`}
+              >
+                {comboData.map((item, j) => (
+                  <span key={j} onClick={() => handleComboNameChange(i, item.name)}>
+                    {item.name}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <img className="column-image-shop" src={image2} alt="" />
@@ -133,3 +124,5 @@ const GridSec = () => {
 };
 
 export default GridSec;
+
+
