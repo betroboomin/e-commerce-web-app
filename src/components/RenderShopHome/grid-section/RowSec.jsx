@@ -24,9 +24,9 @@ const RowSec = (props) => {
             {/* <Link to="./laptops" className='listing home-shop-container-right-btn full'>
             Shop {props.btnName}
             </Link> */}
-            <div className=' home-shop-container-right-btn full'>
+            <Link to={`${props.link}/${props.name}`} className='listing home-shop-container-right-btn full'>
             Shop {props.btnName}
-            </div>
+            </Link>
             
             <div onClick={props.click} className="home-shop-container-right-btn Outlined">
               Explore {props.btnName}

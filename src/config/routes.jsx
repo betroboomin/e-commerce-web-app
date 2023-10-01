@@ -17,9 +17,9 @@ const Routing = () => {
       <Route path='/:category/:id' element={<Detail />} />
   <Route path='/:category' element={<Catalog />} />*/}
       <Route path='/' element={<Home />} /> 
-      <Route path='/shop/laptop/laptops' element={<Laptop />} /> 
+      <Route path='/shop/laptop/laptops/:name' element={<Laptop />} /> 
       <Route path='/shop/laptop' element={<LaptopHome />} /> 
-      <Route path='/shop' element={<Laptop />} /> 
+      {/* <Route path='/shop' element={<Laptop />} />  */}
       <Route path='/shop/desktop' element={<Desktop />} /> 
       <Route path='/shop/monitor' element={<Monitor />} /> 
     </Routes>

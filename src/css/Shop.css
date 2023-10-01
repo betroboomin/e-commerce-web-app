@@ -15,6 +15,18 @@
     
     
 }
+.header-sec-shop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.header-sec-shop span{
+    font-size: 3rem;
+    padding: 1.5rem;
+    text-transform: capitalize;
+}
 .left-grid{
     /* background-color: red; */
     max-width: 400px;

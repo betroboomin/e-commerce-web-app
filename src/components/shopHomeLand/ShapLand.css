@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 30rem;
     position: relative;
   
 }
@@ -30,6 +30,7 @@
     font-weight: 600;
     font-family: 'poppins',sans-serif;
     color: rgb(0, 255, 0);
+    
     text-shadow: 1px 1px 50px rgba(255, 255, 255, 0.445);
     /* animation: blink 1s infinite; */
 }
@@ -47,4 +48,5 @@
     width: 60%;
     line-height: 2;
     text-align: center;
+    transition: width .3s ease;
 }

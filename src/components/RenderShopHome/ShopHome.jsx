@@ -27,7 +27,9 @@ const data = [
         text:"Power your passions with premium, precision-crafted laptops with innovative features.",
         btnName:"XPS",
         image:image1,
-        click: props.click
+        click: props.click,
+        link:"./laptops",
+        name:"XPS laptops"
     },
     {
         heading:"XPS Laptops & 2-in-1 PCs",
@@ -36,7 +38,9 @@ const data = [
         text:"Power your passions with premium, precision-crafted laptops with innovative features.",
         btnName:"XPS",
         image:image22,
-        click: props.click
+        click: props.click,
+        link:"./laptops",
+        name:"XPS laptops"
     },
     {
         heading:"Latitude Laptops & 2-in-1 PCs",
@@ -45,7 +49,9 @@ const data = [
         text:"Work from anywhere with the world’s most intelligent and secure business laptops sustainably designed for productivity on the go.",
         btnName:"Latitude",
         image:laptopandboy,
-        click: props.click
+        click: props.click,
+        link:"./laptops",
+        name:"Latitude laptops"
     },
     {
         heading:"Inspiron Laptops & 2-in-1 PCs",
@@ -54,7 +60,9 @@ const data = [
         text:"Create, consume and connect in style with versatile laptops and 2-in-1s.",
         btnName:"Inspiron",
         image:laptop360,
-        click: props.click
+        click: props.click,
+        link:"./laptops",
+        name:"Inspiron laptops"
     },
     {
         heading:"Vostro Laptops",
@@ -63,7 +71,9 @@ const data = [
         text:"Power your small business with laptops built to deliver security, performance and enhanced video conferencing.",
         btnName:"Vostro",
         image:Vostro,
-        click: props.click
+        click: props.click,
+        link:"./laptops",
+        name:"Vostro laptops"
     },
     {
         heading:"Alienware Gaming Laptops",
@@ -72,7 +82,9 @@ const data = [
         text:"Experience high-performance gaming with iconic designs and intelligently engineered laptops.",
         btnName:"Alienware",
         image:alienware,
-        click: props.click
+        click: props.click,
+        link:"./laptops",
+        name:"Alienware laptops"
     },
     {
         heading:"G Series Gaming Laptops",
@@ -81,7 +93,9 @@ const data = [
         text:"Take your game to the next level with split-second responsiveness and dynamic gameplay.",
         btnName:"G Series",
         image:Gseries,
-        click: props.click
+        click: props.click,
+        link:"./laptops",
+        name:"G Series laptops"
     },
 
 ]

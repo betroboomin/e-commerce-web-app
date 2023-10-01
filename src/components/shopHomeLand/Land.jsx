@@ -13,7 +13,7 @@ const data = {
 const Land = () => {
   return (
     <div
-    className="shopland "
+    className="shopland"
     style={{ backgroundImage: `url(${data.image})` }}
   >
      <div className="shopland-box container">

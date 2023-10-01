@@ -12,11 +12,14 @@ import { NotificationAdd } from "@mui/icons-material";
 import { Alert} from "@mui/material";
 import LeftSection from "../components/LeftSection/LeftSection";
 // import { makeStyles } from '@mui/styles';
+import { useParams } from "react-router-dom";
 
 
 const Shop = (props) => {
   const [isClicked, setisClicked] = useState(false);
   const navigate = useNavigate();
+  const { parameter } = useParams();
+
   const handlebtnclick =()=>{
 setisClicked(!isClicked);
 // navigate(<Home />)
@@ -28,9 +31,9 @@ setisClicked(!isClicked);
   const renderItems = (items) => {
     return (
       <>
-      { !isClicked && <ShopHome click={handlebtnclick} />}
-        {isClicked && items.map((item, i) => (
+      {items.map((item, i) => (
           <>
+         
             <ShopItem
               key={i}
               image={item.image}
@@ -54,11 +57,17 @@ setisClicked(!isClicked);
 
   return (
     <div className="shop">
-      <div className="shop-items container">
-        <div className="left-grid">
+      <div className=" container">
+        <div className="header-sec-shop">
+        <span> {props.parameter}</span>
+      
+        </div>
+      <div className="shop-items">
+      <div className="left-grid">
           <LeftSection leftsection={props.leftsection}/>
         </div>
         <div className="right-grid">
+       
           {rightsection.map((item, i) => (
             <div key={i}>
               {category === "machines" && renderItems(item.machines)}
@@ -67,6 +76,8 @@ setisClicked(!isClicked);
             </div>
           ))}
         </div>
+      </div>
+       
       </div>
     </div>
   );
