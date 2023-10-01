@@ -11,6 +11,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import image2 from "../../assets/laptops/laptopwithflower.avif";
 import GridSec from "./grid-section/GridSec";
 import RowSec from "./grid-section/RowSec";
+import laptopandboy from "../../assets/laptops/laptopsandboy.avif"
 
 const ShopHome = (props) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -29,12 +30,21 @@ const data = [
         click: props.click
     },
     {
+        heading:"XPS Laptops & 2-in-1 PCs",
+        boldleft:"Creators & Creativity",
+        price:599,
+        text:"Power your passions with premium, precision-crafted laptops with innovative features.",
+        btnName:"XPS",
+        image:image22,
+        click: props.click
+    },
+    {
         heading:"Latitude Laptops & 2-in-1 PCs",
         boldleft:"Business Performance & Collaboration",
         price:609,
         text:"Work from anywhere with the world’s most intelligent and secure business laptops sustainably designed for productivity on the go.",
         btnName:"Latitude",
-        image:image22,
+        image:laptopandboy,
         click: props.click
     },
     {
