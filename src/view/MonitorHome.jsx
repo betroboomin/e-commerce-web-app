@@ -8,22 +8,15 @@ import LeftSection from "../components/LeftSection/LeftSection";
 import { headerlistLow } from "../api/arrays/header";
 import ShopLand from "../components/shopHomeLand/ShopLand";
 import Land from "../components/shopHomeLand/Land";
-
-
-
-//photos
-
 import {data } from '../api/arrays/shop'
 
-const LaptopHome = (props) => {
+
+const MonitorHome = (props) => {
   const [isClicked, setisClicked] = useState(false);
-  const handlebtnclick = () => {
-    setisClicked(!isClicked);
-  };
-
-
-  
-
+  const navigate = useNavigate();
+  const handlebtnclick =()=>{
+setisClicked(!isClicked);
+  }
   return (
     <div className="shop">
       <Land/>
@@ -32,11 +25,11 @@ const LaptopHome = (props) => {
           <LeftSection leftsection={headerlistLow}/>
         </div>
         <div className="right-grid">
-           <ShopHome data={data.laptops} click={handlebtnclick} />
+           <ShopHome data={data.monitors} click={handlebtnclick} />
         </div>
       </div>
     </div>
   );
 };
 
-export default LaptopHome;
+export default MonitorHome;
