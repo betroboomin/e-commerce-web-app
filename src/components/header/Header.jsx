@@ -66,8 +66,8 @@ const Header = () => {
                     {item.name}
                   </Link>
                   <ArrowForwardIosIcon className="foward-icon" />
-                  {hoveredItem === i && (
-                    <div className="">
+                  
+                      <div className={`hovered-item ${hoveredItem === i ? 'displayItem' : ''}`}>
                       <div className="remove">
                         {item.list.map((list, j) => (
                           <div className="nav-item-list " key={j}>
@@ -77,7 +77,7 @@ const Header = () => {
                         ))}
                       </div>
                     </div>
-                  )}
+                  
                 </li>
               </>
             ))}

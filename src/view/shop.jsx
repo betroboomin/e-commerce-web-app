@@ -57,7 +57,7 @@ setisClicked(!isClicked);
 
   return (
     <div className="shop">
-      <div className=" container">
+      <div className="shop-box container">
         <div className="header-sec-shop">
         <span> {props.parameter}</span>
       
