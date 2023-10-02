@@ -6,38 +6,50 @@ import { Link } from 'react-router-dom';
 const RowSec = (props) => {
   return (
     <>
-    <div className="home-shop-container-left">
-          <img src={props.image} alt="" />
-        </div>
-        <div className="home-shop-container-right">
-          <span className="home-shop-container-right-Heading">
-            {props.heading}
-          </span>
-          <span className=" home-shop-container-right-bold-heading">
-            {props.boldleft}<span className="seperator"></span>Starting at
-            {props.price}.00
-          </span>
-          <span className="home-shop-container-right-text">
-            {props.text}
-          </span>
-          <div className="btn-section-home-sec">
-            {/* <Link to="./laptops" className='listing home-shop-container-right-btn full'>
+      <div className="home-shop-container-left">
+        <img src={props.image} alt="" />
+      </div>
+      <div className="home-shop-container-right">
+        <span className="home-shop-container-right-Heading">
+          {props.heading}
+        </span>
+        <span className=" home-shop-container-right-bold-heading">
+          {props.boldleft}
+          {props.price && (
+            <>
+              <span className="seperator"></span>Starting at
+              {props.price}.00
+            </>
+          )}
+        </span>
+        <span className="home-shop-container-right-text">{props.text}</span>
+        <div className="btn-section-home-sec">
+          {/* <Link to="./laptops" className='listing home-shop-container-right-btn full'>
             Shop {props.btnName}
             </Link> */}
-            <Link to={`${props.link}/${props.name}`} className='listing home-shop-container-right-btn full'>
+          <Link
+            to={`${props.link}/${props.name}`}
+            className="listing home-shop-container-right-btn full"
+          >
             Shop {props.btnName}
-            </Link>
-            
-            <div onClick={props.click} className="home-shop-container-right-btn Outlined">
+          </Link>
+
+          {props.explore && (
+            <div
+              onClick={props.click}
+              className="home-shop-container-right-btn Outlined"
+            >
               Explore {props.btnName}
             </div>
-            {/* <Link to="./laptops" className="listing home-shop-container-right-btn Outlined">
+          )}
+
+          {/* <Link to="./laptops" className="listing home-shop-container-right-btn Outlined">
               Explore {props.btnName}
             </Link> */}
-          </div>
         </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default RowSec

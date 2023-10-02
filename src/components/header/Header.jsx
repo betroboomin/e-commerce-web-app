@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Header.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { HeaderList, headerlistLow } from "../../api/arrays/header";
@@ -20,16 +20,22 @@ const Header = () => {
   const onChange = (e) => {
     setValue(e.target.value);
   };
+
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   return (
     <din className="header-main">
       <div className="header">
         <div className="header__content container">
           <div className="header__logo">
             {/* <img src={} alt='' /> */}
-            <h1>
+            <Link to="/" className="listing">
+              <h1>
               <span className="B-color">B</span>etro{" "}
               <span className="tech">Technologies</span>
-            </h1>
+              </h1>
+              
+            </Link>
           </div>
           <div className="section mb-3">
             <Search category="" keyword="" />
@@ -85,30 +91,12 @@ const Header = () => {
         </div>
        
       </div>
-      <HeaderL />
+     { isHomePage && <HeaderL />}
 
       
     </din>
   );
 };
-
-// useEffect(() => {
-//   const shrinkHeader = () => {
-//     if (
-//       document.body.scrollTop > 100 ||
-//       document.documentElement.scrollTop > 100
-//     ) {
-//       headerRef.current.classList.add('shrink');
-//     } else {
-//       headerRef.current.classList.remove('shrink');
-//     }
-//   };
-//   window.addEventListener('scroll', shrinkHeader);
-//   return () => {
-//     window.removeEventListener('scroll', shrinkHeader);
-//   };
-// }, []);
-
 
 const Search = (props) => {
   const navigate = useNavigate();

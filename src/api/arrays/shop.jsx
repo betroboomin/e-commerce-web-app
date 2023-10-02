@@ -14,6 +14,9 @@ import laptop360 from "../../assets/laptops/360laptop.avif"
 import Vostro from "../../assets/laptops/vostroLaptop.avif"
 import alienware from "../../assets/laptops/alienwarelaptop.webp"
 import Gseries from "../../assets/laptops/gseriesgaminglaptop.avif"
+import chromebook from "../../assets/laptops/chromebook.avif"
+import laptopdeals from "../../assets/laptops/Laptopdeals.avif"
+import latitude from "../../assets/laptops/lattitude.avif"
 
 import allinone from "../../assets/laptops/allinonedesktops.avif"
 import xpsdesktops from "../../assets/laptops/xpsdesktops.avif"
@@ -169,26 +172,29 @@ export const data =
         image: image1,
         link: "./laptops",
         name: "XPS laptops",
+        explore: true
       },
-      {
-        heading: "XPS Laptops & 2-in-1 PCs",
-        boldleft: "Creators & Creativity",
-        price: 599,
-        text: "Power your passions with premium, precision-crafted laptops with innovative features.",
-        btnName: "XPS",
-        image: image22,
-        link: "./laptops",
-        name: "XPS laptops",
-      },
+      // {
+      //   heading: "XPS Laptops & 2-in-1 PCs",
+      //   boldleft: "Creators & Creativity",
+      //   price: 599,
+      //   text: "Power your passions with premium, precision-crafted laptops with innovative features.",
+      //   btnName: "XPS",
+      //   image: image22,
+      //   link: "./laptops",
+      //   name: "XPS laptops",
+      //   explore: true
+      // },
       {
         heading: "Latitude Laptops & 2-in-1 PCs",
         boldleft: "Business Performance & Collaboration",
         price: 609,
         text: "Work from anywhere with the world’s most intelligent and secure business laptops sustainably designed for productivity on the go.",
         btnName: "Latitude",
-        image: laptopandboy,
+        image: latitude,
         link: "./laptops",
         name: "Latitude laptops",
+        explore: true
       },
       {
         heading: "Inspiron Laptops & 2-in-1 PCs",
@@ -199,6 +205,7 @@ export const data =
         image: laptop360,
         link: "./laptops",
         name: "Inspiron laptops",
+        explore: true
       },
       {
         heading: "Vostro Laptops",
@@ -209,6 +216,7 @@ export const data =
         image: Vostro,
         link: "./laptops",
         name: "Vostro laptops",
+        explore: true
       },
       {
         heading: "Alienware Gaming Laptops",
@@ -219,6 +227,7 @@ export const data =
         image: alienware,
         link: "./laptops",
         name: "Alienware laptops",
+        explore: true
       },
       {
         heading: "G Series Gaming Laptops",
@@ -229,18 +238,51 @@ export const data =
         image: Gseries,
         link: "./laptops",
         name: "G Series laptops",
+        explore: true
+      },
+      {
+        heading: "Precision mobile workstations",
+        boldleft: "Advanced users and applications",
+        price: "1,326",
+        text: "Take your ideas to the next level with our #1 workstations; optimized for performance, reliability and user experience. ",
+        btnName: "Precision",
+        image: image22,
+        link: "./laptops",
+        name: "Precision laptops",
+        explore: true
+      },
+      {
+        heading: "Chromebook laptops and 2-in-1 PCs",
+        boldleft: "Versatility for the cloud",
+        price: "361",
+        text: "Meet the needs of all levels of users with cloud security and all-day battery life from the virtual learning environment to the enterprise.",
+        btnName: "Chromebook",
+        image: chromebook,
+        link: "./laptops",
+        name: "Chromebook laptops",
+        explore: true
+      },
+      {
+        heading: "Laptop deals",
+        boldleft: "Our top brands reduced in price",
+        text: "Take advantage of temporary discounts on select laptops. Check out our exclusive deals and get the best for less.",
+        btnName: "All Offers",
+        image: laptopdeals,
+        link: "./laptops",
+        name: "Laptop deals",
+        explore: false
       },
     ],
     desktops: [
       {
         heading: "All-in-one desktops",
         boldleft: "Everything in one place",
-        price: 599,
         text: "Connect seamlessly to all-in-one desktops designed for easy setup and an enhanced video and audio experience. ",
         btnName: "All-in-one",
         image: allinone,
         link: "./desktops",
         name: "All-in-one desktops",
+        
       },
       {
         heading: "XPS desktops",
@@ -251,6 +293,7 @@ export const data =
         image: xpsdesktops,
         link: "./desktops",
         name: "XPS desktops",
+        explore: true
       },
       {
         heading: "Optiplex desktops and all-in-one PCs",
@@ -261,6 +304,7 @@ export const data =
         image: optiplex,
         link: "./desktops",
         name: "OptiPlex desktops",
+        explore: true
       },
       {
         heading: "Inspiron desktops and all-in-one PCs",
@@ -271,6 +315,7 @@ export const data =
         image: inspiron,
         link: "./desktops",
         name: "Inspiron Desktops",
+        explore: true
       },
       {
         heading: "Vostro Desktops",
@@ -281,6 +326,7 @@ export const data =
         image: vostrodesktops,
         link: "./desktops",
         name: "Vostro desktops",
+        explore: true
       },
       {
         heading: "Alienware Gaming Desktops",
@@ -291,6 +337,7 @@ export const data =
         image: alienwaredesktops,
         link: "./desktops",
         name: "Alienware desktops",
+        explore: true
       },
       {
         heading: "Precision tower and rack workstations",
@@ -301,11 +348,11 @@ export const data =
         image: precision,
         link: "./desktops",
         name: "Precision Desktops",
+        explore: true
       },
       {
         heading: "Desktops deals",
         boldleft: "Desktops deals",
-        price: 300,
         text: "Shop our exclusive deals and get the best for less.",
         btnName: "Deals",
         image: desktopdeals,
@@ -317,17 +364,16 @@ export const data =
       {
         heading: "All Monitors",
         boldleft: "See all. Do everything.",
-        price: 599,
         text: "View our full selection of monitors with 4/6/8K, video conferencing, touch, curved, UltraSharp and much more.",
         btnName: "All Monitors",
         image: allmonitors,
         link: "./monitors",
         name: "All Monitors",
+        explore: false
       },
       {
         heading: "Alienware & Gaming Monitors",
         boldleft: "For gaming at all levels",
-        price: 599,
         text: "Performance-oriented gaming monitors with a fast response time, fast refresh rate (up to 360 Hz) and incredibly vibrant colors.",
         btnName: "Gaming Monitors",
         image: alienwaremonitors,
@@ -337,9 +383,8 @@ export const data =
       {
         heading: "UltraSharp Monitors",
         boldleft: "Infinite perspectives. Unlimited possibilities.",
-        price: 609,
         text: "Top quality monitors made with innovative design and technology for brilliant colors and ultimate performance.",
-        btnName: "UltraSharp",
+        btnName: "UltraSharp Monitors",
         image: ultrasharp,
         link: "./monitors",
         name: "UltraSharp Monitors",
@@ -348,7 +393,7 @@ export const data =
         heading: "Curved Monitors",
         boldleft: "For artists, gamers and multitaskers",
         text: "Maximize immersive viewing experiences with monitors that reduce glare and distortion.",
-        btnName: "Curved",
+        btnName: "Curved Monitors",
         image: curvedmonitor,
         link: "./monitors",
         name: "Curved Monitors",
@@ -357,7 +402,7 @@ export const data =
         heading: "4K & 8K Monitors",
         boldleft: "The best monitors for streaming & entertainment",
         text: "Discover every detail in exceptionally detailed colors and with up to 8x higher resolution than in Full HD.",
-        btnName: "4K & 8K",
+        btnName: "4K & 8K Monitors",
         image: highresmonitors,
         link: "./monitors",
         name: "4K & 8K Monitors",
@@ -366,7 +411,7 @@ export const data =
         heading: "Professional Monitors",
         boldleft: "For workplace performance",
         text: "Improve your work performance with these reliable, feature-packed monitors designed to boost productivity.",
-        btnName: "Professional",
+        btnName: "Professional Monitors",
         image: proffesional,
         link: "./monitors",
         name: "Professional Monitors",
@@ -375,7 +420,7 @@ export const data =
         heading: "Video Conferencing Monitors",
         boldleft: "For connection and collaboration",
         text: "Experience world-class collaboration with monitors designed for teamwork anywhere.",
-        btnName: "Conferencing",
+        btnName: "Video Conferencing Monitors",
         image: videoconfrencing,
         link: "./monitors",
         name: "Video Conferencing Monitors",
@@ -384,7 +429,7 @@ export const data =
         heading: "Monitor Deals",
         boldleft: "Limited-time offers",
         text: "Take advantage of deals on a wide range of monitors. Shop our exclusive deals and get the best for less.",
-        btnName: "Deals",
+        btnName: "Monitor Deals",
         image: monitordeals,
         link: "./monitors",
         name: "Monitor Deals",
@@ -393,7 +438,7 @@ export const data =
         heading: "Monitor Accessories",
         boldleft: "Speakers, stands, cables & much more",
         text: "Work more efficiently with accessories designed to get the most out of your viewing experience.",
-        btnName: "Accessories",
+        btnName: "Monitor Accessories",
         image:monitoraccesories ,
         link: "./monitors",
         name: "Monitor Accessories",
