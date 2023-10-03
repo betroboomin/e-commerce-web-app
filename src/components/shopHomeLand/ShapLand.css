@@ -17,7 +17,7 @@
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.897), rgb(0, 0, 0)), url(../../assets/backgrounds/blacktriangle.png);
     /* background:url(../../assets/backgrounds/blacktriangle.png) black; */
     /* z-index: -1; */
-    /* filter: hue-rotate(260deg); */
+    filter: saturate(5) brightness(1.2) hue-rotate(250deg);
     /* background-color: rgba(0, 0, 0, 0.877); */
 
 }
