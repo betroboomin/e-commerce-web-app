@@ -2,19 +2,19 @@ import React, { useEffect, useState } from 'react'
 import "./ShapLand.css";
 import background from "../../assets/laptops/girlwriting.avif";
 import { TypeAnimation } from 'react-type-animation';
-
+import bg from "../../assets/backgrounds/blacktriangle.png"
 
 const data = {
     heading: ["Shop with us, aim for power", "Hello!"],
     desc: `We provide the best Tech Gadgets in the market that fit your style and aesthetics`,
-    image: background,
+    image: bg,
   };
 
 const Land = () => {
   return (
     <div
     className="shopland"
-    style={{ backgroundImage: `url(${data.image})` }}
+    // style={{ background: `url(${data.image}) black` }}
   >
      <div className="shopland-box container">
         <div className="shopland-heading">

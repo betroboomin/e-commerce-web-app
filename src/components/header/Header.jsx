@@ -8,6 +8,7 @@ import HeaderL from "../header2/HeaderL";
 
 const Header = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
+
   const handleItemHover = (index) => {
     setHoveredItem(index);
   };
