@@ -44,6 +44,17 @@
     flex: 1;
 }
 
-.explore-sec:nth-child(2n+1){
+.section-box{
+    width: 100%;
+}
+.section-box:nth-child(2n){
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:;
+}
+.section-box:nth-child(odd) .homeviewsection .home-view-section{
+    
+    flex-direction:row-reverse;
 }

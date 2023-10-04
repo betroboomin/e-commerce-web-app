@@ -7,7 +7,10 @@ const HomeViewSection = (props) => {
   return (
     <div className='homeviewsection'>
         <div className="home-view-section container">
-            <img src={props.src} alt='' />
+          <div className="img">
+          <img src={props.src} alt='' />
+          </div>
+            
             <div className="home-view-section-text">
                 <h3 className='mb-2'>{props.h3}</h3>
                 <h1 className='mb-2'>{props.h1}</h1>

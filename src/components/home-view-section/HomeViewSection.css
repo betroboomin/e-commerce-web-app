@@ -30,6 +30,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 .home-view-section-small{
     display: flex;
@@ -41,7 +42,12 @@
 
 
 .home-view-section img{
-    height: 480px;
+    width: 100%;
+}
+.home-view-section .img{
+    width: 100%;
+   flex: 1;
+   /* background-color: red; */
 }
 .home-view-section-small img{
     width: 100%;
@@ -51,8 +57,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    padding: 1rem;
+    box-sizing: border-box;
     text-align: center;
+    flex: 1;
+    /* background-color: blue; */
 }
 .home-view-section-text-small{
     display: flex;

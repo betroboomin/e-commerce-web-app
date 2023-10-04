@@ -48,6 +48,7 @@
     filter: saturate(5) hue-rotate(270deg) brightness(.2);
     background-size: cover;
     z-index: -2;
+    transition: transform 0.5s ease-out;
   }
   .home-shop-container:nth-child(odd)::after {
     content: "";
@@ -63,6 +64,9 @@
     /* filter: saturate(5) hue-rotate(270deg) brightness(1); */
     background-size: cover;/* Adjust the opacity value as needed */
     z-index: -1;
+  }
+  .home-shop-container.animate-bg::before {
+    transform: translateY(-50%); /* Adjust the transformation as needed */
   }
 
 

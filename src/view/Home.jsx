@@ -13,17 +13,20 @@ import HomeViewSectionSmall from "../components/home-view-section/homeviewsmall"
 import laptop from "../assets/dellhomelaptop.avif";
 import smallmonitor from "../assets/dellhomedesktop.avif";
 import { WidthFull } from "@mui/icons-material";
+import backtoschool2 from "../assets/dellsetup.avif"
 
 const Home = () => {
   return (
     <div className="home">
       <HomeView />
+      <h1 className="heading">explore dell technologies</h1>
       <div className="explore-sec">
-        <h1 className="heading">explore dell technologies</h1>
-        <Technologies />
-      </div>
-      <div className="explore-sec">
-        <HomeViewSection
+    
+       <div className="section-box">
+       <Technologies />
+       </div>
+       <div className="section-box">
+       <HomeViewSection
           src={backtoschool}
           h3="back to school"
           h1="invest in your game. invest in others"
@@ -33,15 +36,30 @@ const Home = () => {
           link1="PC Deals"
           link2="Learn More"
         />
-      </div>
-      <div className="explore-sec">
+       </div>
+       <div className="section-box">
+       <HomeViewSection
+          src={backtoschool2}
+          h3="back to school"
+          h1="invest in your game. invest in others"
+          p="with each eligible purchase, Dell will donate to UNICEF to help connect 
+      schools to the internet. Includes accidental damage service to protect your pc
+      "
+          link1="PC Deals"
+          link2="Learn More"
+        />
+       </div>
+       
+        
+        
+      {/* <div className="explore-sec">
         <HomeViewSectionI />
+      </div> */}
+      <div className="section-box">
+      <HomeSupport />
       </div>
-      <div className="explore-sec">
-        <HomeSupport />
-      </div>
-      <div className="explore-sec">
-        <HomeViewSection
+      <div className="section-box">
+      <HomeViewSection
           src={monitor}
           h3="gaming monitors"
           h1="best-in-Class visuals"
@@ -50,6 +68,9 @@ const Home = () => {
           link2="learn more"
         />
       </div>
+        
+        </div>
+      
 
       <div className="whitebg ">
         <div className="whitebg-content container">
