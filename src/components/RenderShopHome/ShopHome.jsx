@@ -3,6 +3,7 @@ import "./ShopHome.css";
 
 import GridSec from "./grid-section/GridSec";
 import RowSec from "./grid-section/RowSec";
+import laptop from '../../assets/dellimage1.avif'
 
 
 const ShopHome = (props) => {
@@ -23,7 +24,21 @@ const ShopHome = (props) => {
         <div key={i} className={`home-shop-container`} >
           <RowSec {...item} />
         </div>
+
       ))}
+      <div className="experiment">
+        <div className="big-box">
+          <div className="circle green"></div>
+          <div className="circle blue"></div>
+          <div className="circle brown"></div>
+        </div>
+      <div className="content-exp">
+        <img src={laptop} alt="" className="image" />
+        <span className="descr">
+          
+        </span>
+      </div>
+      </div>
 
     </div>
   );

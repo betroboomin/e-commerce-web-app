@@ -14,6 +14,96 @@
     gap: 2rem;
     box-sizing: border-box;
 }
+
+
+
+
+
+/*experiment*/ 
+.experiment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.big-box{
+    width: 500px;
+    height: 500px;
+    /* background-color: #202020; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 10s infinite;
+    z-index: 1;
+}
+.content-exp{
+    height: 300px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.034);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: all .1s ease-in-out;
+}
+.image{
+    flex: 1;
+    width: 100%;
+}
+.descr{
+    flex: 1;
+}
+.content-exp:hover{
+    transform-origin: center; /* Set the rotation origin to the left side */
+    transform: perspective(1000px) rotateY(-30deg) scale(120%);
+}
+
+
+@keyframes rotate {
+    50%{
+            transform:translateX(100%) rotate(360deg);
+        
+    }
+}
+.circle{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    filter: blur(10rem);
+}
+.green{
+    background: rgb(0, 255, 0);
+  
+}
+.blue{
+    background-color: blue;
+
+}
+.brown{
+    background: brown;
+  
+}
+
+
+
+
+
+
+
+
 .home-shop-container:nth-child(2n){
     background:  black;
     flex-direction: row-reverse; 

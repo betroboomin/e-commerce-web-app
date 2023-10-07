@@ -5,19 +5,21 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const ShopBox = ({name,list}) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [selectedList, setSelectedList] = useState('');
-  
-
+  const [showAll, setShowAll] = useState(false)
 
   
   const handleRadioClick = (index) => {
     
     setSelectedList(index);
   };
+  const onlinkclink = () =>{
+    setShowAll(!showAll)
+  }
   const handleItemClick = () => {
     setIsExpanded(!isExpanded);
   };
  
-
+const displaylist = showAll ? list : list.slice(0,5);
 
   return (
     <div className="shopbox">
@@ -28,26 +30,32 @@ const ShopBox = ({name,list}) => {
         <h3>{name}</h3>
         <ArrowForwardIosIcon className="foward-icon" />
       </div>
-      {isExpanded && (
-        <ul>
-          {list.map((list, j) => (
+      {/* {isExpanded && ( */}
+      <span className={`add-height `}>
+      <ul className={`ul ${!isExpanded ? 'showcontent' : ''}`}>
+          {displaylist.map((item, j) => (
             <li key={j}>
               <label className="checkbox-container ">
                 <input
                   type="checkbox"
                   name={name}
-                  value={list}
+                  value={item}
                   checked={selectedList === j}
                   onChange={() => handleRadioClick(list)}
                 />
                 <span className="checkmark"></span>
               </label>
-
-              <div className="listtext">{list}</div>
+        
+              <div className="listtext">{item}</div>
             </li>
           ))}
+          {list.length > 5 && ( <span className="listtext colored" onClick={onlinkclink} >
+            {showAll ? 'show-less' : 'show-more'}
+            </span>)} 
+         
         </ul>
-      )}
+        </span>
+      {/* )} */}
     </div>
   );
 };

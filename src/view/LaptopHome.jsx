@@ -13,7 +13,7 @@ import Land from "../components/shopHomeLand/Land";
 
 //photos
 
-import {data } from '../api/arrays/shop'
+import {data, sidebardata } from '../api/arrays/shop'
 
 const LaptopHome = (props) => {
   const [isClicked, setisClicked] = useState(false);
@@ -29,7 +29,7 @@ const LaptopHome = (props) => {
       <Land/>
       <div className="shop-items container">
         <div className="left-grid">
-          <LeftSection leftsection={headerlistLow}/>
+          <LeftSection leftsection={sidebardata.laptop}/>
         </div>
         <div className="right-grid">
            <ShopHome data={data.laptops} click={handlebtnclick} />

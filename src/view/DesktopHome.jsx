@@ -24,7 +24,7 @@ setisClicked(!isClicked);
       <Land/>
       <div className="shop-items container">
         <div className="left-grid">
-          <LeftSection leftsection={sidebardata.laptop}/>
+          <LeftSection leftsection={sidebardata.desktop}/>
         </div>
         <div className="right-grid">
            <ShopHome data={data.desktops} click={handlebtnclick} />
