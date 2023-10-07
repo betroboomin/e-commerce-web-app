@@ -6,6 +6,7 @@ import Routing from './config/routes';
 import 'swiper/css'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import ContactUsBtn from './components/Contact-us-btn/ContactUsBtn';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Header />
 
         <Routing />
-
+   <ContactUsBtn />
         <Footer />
+        
       </div>
     </BrowserRouter>
   );

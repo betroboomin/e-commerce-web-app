@@ -448,6 +448,137 @@ export const data =
 
 
 
+  export const sidebardata = {
+    laptop : [
+      {
+        name: "product-line",
+        content: [
+          "xps",
+          "latitude",
+          "inspiron",
+          "vostro",
+          "alienware",
+          "G series",
+          "precision",
+          "Dell Education",
+        ]
+      },
+      {
+        name: "dispatch",
+        content: [
+          "delivered next working day",
+          "shipped within 5days",
+          "shipped within 10days ",
+        ]
+      },
+      {
+        name: "Screen Size",
+        content: [
+          "18 inches",
+          "17 inches",
+          "16 inches",
+          "15 inches",
+          "14 inches",
+          "13 inches",
+          "11 inches",
+         
+        ]
+      },
+      {
+        name: "Form factor",
+        content: [
+          "2-in-1 and detachable",
+          "laptop",
+          "16 inches screen with a width of 15 inches",
+          "ultralight",
+        ]
+      },
+      {
+        name: "processor",
+        content: [
+          "intel processor",
+          "intel core i9 k series",
+          "intel core i9",
+          "intel core i7",
+          "intel core i5",
+          "intel core i3",
+          "AMD processor",
+          "AMD Ryzen 9",
+          "AMD Ryzen 7",
+          "AMD Ryzen 5",
+        ]
+      },
+      {
+        name: "generation of the processor",
+        content: [
+          "13th generation intel core",
+          "12th generation intel core",
+          "11th generation intel core",
+          "AMD Ryzen 7000 series",
+          "AMD Ryzen 6000 series",
+          "AMD Ryzen 5000 series",
+          
+        ]
+      },
+      {
+        name: "Price",
+        content: [
+          "500$ and less",
+          "500$ - 600$",
+          "600$ - 800$",
+          "800$ - 1000$",
+          "1000$ and more",
+          
+        ]
+      },
+      {
+        name: "Memory (RAM)",
+        content: [
+          "64GB",
+          "32GB",
+          "16GB",
+          "8GB",
+          "4GB and less",
+          
+        ]
+      },
+      {
+        name: "Disk capacity",
+        content: [
+          "2TB and more",
+          "1TB",
+          "512GB",
+          "256GB",
+          "128GB and less",
+          
+        ]
+      },
+      {
+        name: "Special features",
+        content: [
+          "Backlit keyboard",
+          "fingerprint reader",
+          "less than 2kg",
+          "numeric keyboard",
+          "touch screen",
+          "Wifi 6",
+          
+        ]
+      },
+      {
+        name: "Costumer review",
+        content: [
+          "4 stars and higher",
+          "3 stars and higher",
+          "2 stars and higher",
+          "1 star and higher",
+        ]
+      },
+    ]
+  }
+
+
+
 
 
 

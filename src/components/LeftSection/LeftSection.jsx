@@ -17,7 +17,7 @@ const LeftSection = (props) => {
           </div>
 
           {props.leftsection.map((item, i) => (
-            <ShopBox key={i} name={item.name} list={item.list} />
+            <ShopBox key={i} name={item.name} list={item.content} />
           ))}
         </div>
       )}

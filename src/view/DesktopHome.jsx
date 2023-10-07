@@ -9,6 +9,7 @@ import { headerlistLow } from "../api/arrays/header";
 import ShopLand from "../components/shopHomeLand/ShopLand";
 import Land from "../components/shopHomeLand/Land";
 import {data } from '../api/arrays/shop'
+import { sidebardata } from "../api/arrays/shop";
 
 
 
@@ -23,7 +24,7 @@ setisClicked(!isClicked);
       <Land/>
       <div className="shop-items container">
         <div className="left-grid">
-          <LeftSection leftsection={headerlistLow}/>
+          <LeftSection leftsection={sidebardata.laptop}/>
         </div>
         <div className="right-grid">
            <ShopHome data={data.desktops} click={handlebtnclick} />
