@@ -26,7 +26,9 @@
     flex: 3;
     /* background-color: blue; */
 display: flex;
-padding: 0 5rem;
+/* padding: 0 5rem; */
+box-sizing: border-box;
+background-color: red;
 }
 .link-sec{
     display: flex;
@@ -40,6 +42,9 @@ padding: 0 5rem;
 }
 .column2{
     background-color: pink;
+}
+.column2{
+    background-color: purple;
 }
 .logo-title{
     font-family: 'montserrat';

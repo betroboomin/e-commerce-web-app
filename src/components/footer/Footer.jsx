@@ -5,8 +5,10 @@ import instagram from '../../assets/socials-image/instagram.png'
 import github from '../../assets/socials-image/github.png'
 import twitter from '../../assets/socials-image/twitter.png'
 import mail from '../../assets/socials-image/google mail.png'
+// import PropTypes from 'prop-types';
 
-const Footer = () => {
+const Footer = (props) => {
+  const {name, tell, photo} = props
   return (
     <div className='footer'>
       
@@ -29,7 +31,7 @@ const Footer = () => {
       </div>
       <div className="footer-box footer-links">
        <div className="link-sec column1">
-        hello
+         hey my name is {name}
        </div>
        <div className="link-sec column2">
 
@@ -44,5 +46,7 @@ const Footer = () => {
       </div>
   );
 }
+
+
 
 export default Footer;
